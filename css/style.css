@@ -1,0 +1,169 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  /*creo una seudoclase*/
+  scroll-behavior: smooth;
+  /*comportamiento del scroll, cuando click en menu*/
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/*** HEADER ***/
+
+
+.contenedor {
+  width: 80%;
+  margin: auto;
+  padding: 4rem 0;
+  overflow: hidden;    /*SE OCULTA TODO LO QUE ESTA POR FUERA DE ESTE CONTENEDOR*/
+}
+
+.site-header {
+  height: 100vh;
+  background-image:  linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(52, 43, 75, 0.6) 100%), url(../img/fondo-header.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+
+}
+
+.hamburguer{
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  background-color: #fff;
+  box-shadow: 0 0 .3rem black;
+  border-radius: 20%;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.nav{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 30vw;        /* 30% ancho pantalla*/
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 30%;
+  background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+  transform: scale(0);
+}
+
+.aparecer-menu{
+  transform: scale(1);
+  transition: 0.5ms;
+}
+
+.head{
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+
+.titulo{
+  font-family: 'Dancing Script', cursive;
+  font-size: 6rem;
+  font-weight: 700;
+  text-shadow: black 0.1em 0.1em 0.2em ;
+}
+
+.subtitulo{
+  font-size: 2rem;
+  text-shadow: black 0.1em 0.1em 0.2em ;
+}
+
+
+/*** Sobre mi ***/
+
+.titulo-seccion{
+  
+  text-shadow: rgb(0, 0, 0) 0.05em 0.05em .4em ;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #f68084;
+  margin-bottom: 3rem;
+}
+
+.foto-perfil{
+  width: 16rem ;
+  margin: 1rem;
+  border-radius: 50%;
+  box-shadow: black 0px 0px 10px;
+  max-width: 30%;
+}
+
+.area-sobremi{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.parrafo-sobremi{
+  padding: 2rem;
+  font-weight: 300;
+  font-size: 1.3rem;
+  text-align: justify;
+  max-width: 30%;
+  line-height: 1.5;
+}
+
+
+/*** Conocimientos ***/
+
+.conocimientos{
+  background-color: #f6808448;
+}
+.conocimientos h2{
+  padding-top: 3rem;
+}
+.subtitulo-seccion{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
+  color: #f68084;
+  margin-bottom: 3rem;
+}
+
+.lenguajes{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.lenguajes img{
+  margin-bottom: 8rem;
+  max-height: 10rem;
+  max-width: 10rem;
+}
+
+
+/*** Proyectos ***/
+
+.proyectos h2{
+padding-top: 3rem;
+}
