@@ -70,7 +70,8 @@ body {
   align-items: center;
   width: 60%;
   background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
-  transform: scale(0);
+  transform: translate(110%);
+  transition: 0.3ms ease-in-out;
 }
 .nav a{
   text-decoration: none;
@@ -81,8 +82,7 @@ body {
 }
 
 .aparecer-menu{
-  transform: scale(1);
-  transition: 0.5ms;
+  transform: translate(0);
 }
 
 .head{
