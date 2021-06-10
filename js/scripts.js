@@ -1,5 +1,6 @@
 const hamburguer = document.querySelector('.hamburguer');
 const nav = document.querySelector('.nav');
+const btn = document.querySelector('.btn-portfolio');
 
 hamburguer.addEventListener('click', () => {
     nav.classList.toggle('aparecer-menu')
@@ -10,3 +11,8 @@ window.addEventListener('click', e=>{
         nav.classList.toggle("aparecer-menu")
     }
 })
+
+btn.addEventListener('click', () => {
+    btn.textContent = '¡Estas acá!'
+})
+
