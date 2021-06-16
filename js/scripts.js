@@ -15,4 +15,3 @@ window.addEventListener('click', e=>{
 btn.addEventListener('click', () => {
     btn.textContent = '¡Estas acá!'
 })
-
