@@ -74,7 +74,7 @@ body {
   width: 60%;
   background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
   transform: translate(110%);
-  transition: 0.3ms ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .nav a {
@@ -144,8 +144,6 @@ body {
 /*** Sobre mi ***/
 
 .titulo-seccion {
-
-  text-shadow: rgb(0, 0, 0) 0.05em 0.05em .4em;
   text-align: center;
   font-size: 3rem;
   font-weight: 400;
