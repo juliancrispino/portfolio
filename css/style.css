@@ -60,6 +60,7 @@ body {
   width: 3rem;
   height: 3rem;
   cursor: pointer;
+  transition: ease-in-out .5s;
 }
 
 .nav {
@@ -255,7 +256,10 @@ body {
 .proyectos h2 {
   padding-top: 3rem;
 }
-
+.cont-proyectos{
+  display: flex;
+  flex-wrap: wrap;
+}
 .titulo-proyecto {
   text-align: center;
   font-size: 2rem;
@@ -401,6 +405,11 @@ footer {
 footer p{
   text-align: center;
   margin-top: 1rem;
+}
+
+.descarga h3:hover{
+  color: black;
+  transition: ease-in-out .5s;
 }
 
 @media (min-width: 700px) {

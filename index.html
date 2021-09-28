@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -35,8 +36,8 @@
     </header>
 
     <main>
-        <section id="Sobremi" class="contenedor sobre-mi">
-            <h2 class="titulo-seccion">- Sobre mí -</h2>
+        <section id="Sobremi" class="contenedor sobre-mi"  data-aos="fade-up" data-aos-duration="2000">
+            <h2 class="titulo-seccion" >- Sobre mí -</h2>
             <div class="area-sobremi">
                 <img src="/img/perfil.png" alt="Julián Crispino" class="foto-perfil">
                 <p class="parrafo-sobremi">¡Hola! Soy Julián Crispino, desde Mar del Plata. Si bien soy Analista en
@@ -49,7 +50,7 @@
 
         </section>
 
-        <section id="Conocimientos" class="conocimientos">
+        <section id="Conocimientos" class="conocimientos"  data-aos="fade-up" data-aos-duration="2000">
 
             <h2 class="titulo-seccion">- Conocimientos -</h2>
 
@@ -77,11 +78,21 @@
         </section>
 
 
-        <section id="Proyectos" class="proyectos">
+        <section id="Proyectos" class="proyectos" data-aos="fade-up" data-aos-duration="2000">
             <h2 class="titulo-seccion">- Proyectos -</h2>
-            <h3 class="subtitulo-seccion">Proyectos reales</h3>
 
             <div class="cont-proyectos">
+                <article class="proyecto contenedor">
+                    <h4 class="titulo-proyecto">Portfolio generico</h4>
+                    <img src="/img/generico.png" alt="Pagina generica" class="img-proyecto">
+                    <p class="texto-proyecto contenedor">Pagina web dinamica creada para practicar librerias de JQuery y Javascript.
+                    </p>
+                    <a href="https://juliancrispino.github.io/paginaPrueba/" target="_blank"><button class="btn">Ir al sitio</button>
+                    </a>
+                    <a href="https://github.com/juliancrispino/paginaPrueba" target="_blank"><button class="btn">Ver
+                            código</button></a>
+                </article>
+                
                 <article class="proyecto contenedor">
                     <h4 class="titulo-proyecto">Unna CM</h4>
                     <img src="/img/unna.png" alt="Unna CM" class="img-proyecto">
@@ -124,10 +135,10 @@
         </section>
 
 
-        <section id="Contacto" class="contacto">
+        <section id="Contacto" class="contacto" data-aos="fade-up" data-aos-duration="2000">
             <h2 class="titulo-seccion">- Contacto -</h2>
             <a href="CV Julian Crispino.pdf" download="CV Julian Crispino" class="descarga">
-                <h3 class="subtitulo-seccion">-> Descargar CV <-</h3>
+                <h3 class="subtitulo-seccion">Descargar CV</h3>
             </a>
             <div class="enlaces-contacto contenedor">
                 <a href="https://www.linkedin.com/in/juli%C3%A1n-crispino-251ba871/" target="_blank"
@@ -146,7 +157,7 @@
 
         <footer>
             
-            <p>Portfolio Julián Crispino, 2021</p>
+            <p data-aos="fade-up" data-aos-duration="2000">Portfolio Julián Crispino, 2021</p>
         </footer>
     </main>
 
@@ -156,6 +167,7 @@
 
 
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="/js/scripts.js"></script>
 
 </body>
