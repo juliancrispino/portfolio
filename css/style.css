@@ -60,6 +60,7 @@ body {
   width: 3rem;
   height: 3rem;
   cursor: pointer;
+  transition: ease-in-out .5s;
 }
 
 .nav {
@@ -74,7 +75,7 @@ body {
   width: 60%;
   background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
   transform: translate(110%);
-  transition: 0.3ms ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .nav a {
@@ -144,8 +145,6 @@ body {
 /*** Sobre mi ***/
 
 .titulo-seccion {
-
-  text-shadow: rgb(0, 0, 0) 0.05em 0.05em .4em;
   text-align: center;
   font-size: 3rem;
   font-weight: 400;
@@ -257,7 +256,10 @@ body {
 .proyectos h2 {
   padding-top: 3rem;
 }
-
+.cont-proyectos{
+  display: flex;
+  flex-wrap: wrap;
+}
 .titulo-proyecto {
   text-align: center;
   font-size: 2rem;
@@ -403,6 +405,11 @@ footer {
 footer p{
   text-align: center;
   margin-top: 1rem;
+}
+
+.descarga h3:hover{
+  color: black;
+  transition: ease-in-out .5s;
 }
 
 @media (min-width: 700px) {

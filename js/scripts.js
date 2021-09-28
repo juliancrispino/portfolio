@@ -1,3 +1,6 @@
+AOS.init();
+
+
 const hamburguer = document.querySelector('.hamburguer');
 const nav = document.querySelector('.nav');
 const btn = document.querySelector('.btn-portfolio');
