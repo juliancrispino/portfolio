@@ -43,7 +43,7 @@ body {
   left: 0;
   display: block;
   border-radius: 50px;
-  background: #b1dae7;
+  background: #f68084;
   width: 45px;
   height: 45px;
   transition: all 0.3s ease;
@@ -55,7 +55,7 @@ body {
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.05em;
-  color: #234567;
+  color: black;
 }
 
 .cta svg {
@@ -65,7 +65,7 @@ body {
   fill: none;
   stroke-linecap: round;
   stroke-linejoin: round;
-  stroke: #234567;
+  stroke: #f68084;
   stroke-width: 2;
   transform: translateX(-5px);
   transition: all 0.3s ease;
@@ -274,9 +274,8 @@ body {
 }
 
 .subtitulo-seccion {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Oswald', cursive;
   text-align: center;
-  font-size: 3.5rem;
   font-weight: 300;
   color: #f68084;
   margin: 2rem 0;
